@@ -33,7 +33,7 @@ button:focus {
 }
 
 .title-cont{
-    /* display: flex; */
+    position: relative;
 }
 .home-title-box{
     margin-top: 5rem;
@@ -63,6 +63,11 @@ button:focus {
     border: none;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
+    transition: all .3s ease-in-out;
+}
+.start-btn:hover{
+    box-shadow: rgba(255, 0, 0, 0.288) 0px 0px 43px;
+    transform: translate3d(0px, -4px, 0px);
 }
 
 .home-img img{
@@ -73,8 +78,14 @@ button:focus {
 }
 
 @media (max-width: 770px) {
+    #home{
+        height: 80vh;
+    }
     .image-col{
         display: none;
+    }
+    .title-cont{
+        padding: 2rem;
     }
 }
 
@@ -333,6 +344,25 @@ button:focus {
     color: white;
 }
 
+@media (max-width: 830px) {
+    .plan-card{
+        width: 300px;
+    }
+}
+
+@media (max-width: 590px) {
+    .plan-card{
+        width: 300px;
+    }
+    .plan-img{
+        width: 100px;
+    }
+    .plan-price-box{
+        margin-top: 2rem;
+        /* margin-left: -1rem; */
+    }
+}
+
 /* FAQS */
 #faqs{
     background: #ffffff;
@@ -413,6 +443,13 @@ button:focus {
     transform: rotate(45deg);
     left: 30px;
     top: 46px;
+}
+
+@media (max-width: 770px) {
+    .questions-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 /* FOOTER */
