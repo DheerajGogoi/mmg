@@ -135,7 +135,7 @@ button:focus {
 
 @media (max-width: 770px) {
     #description .container{
-        padding-top: 4rem;
+        padding-top: 3rem;
         padding-bottom: 4rem;
     }
     .desc-bg-img{
@@ -293,16 +293,22 @@ button:focus {
     text-align: center;
 }
 .plan-img{
+    width: 60px
+}
+.top-row{
+    display: flex;
+    flex-direction: row;
+}
+.plan-img-box{
+    padding: 1rem;
     border-bottom: 1.3rem solid white;
     border-right: 1.3rem solid white;
     border-bottom-right-radius: 40px;
-    padding: 20px;
-    /* height: 115px; */
-    /* width: auto; */
+    align-items: center;
 }
 .plan-price-box{
-    margin-top: 2rem;
-    margin-left: -1rem;
+    margin-top: 1rem;
+    margin-left: 1rem
 }
 .plan-price{
     font-size: 10px;
@@ -314,6 +320,7 @@ button:focus {
     font-weight: bolder;
     font-size: 2rem;
     color: black;
+    font-family: 'Roboto', sans-serif;
 }
 .fa-check{
     margin-right: 0.5rem;
@@ -352,10 +359,10 @@ button:focus {
 
 @media (max-width: 590px) {
     .plan-card{
-        width: 300px;
+        margin-left: 1.5rem
     }
     .plan-img{
-        width: 100px;
+        /* width: 100px; */
     }
     .plan-price-box{
         margin-top: 2rem;
@@ -403,11 +410,12 @@ button:focus {
 }
 
 .accordion-card{
-    box-shadow: 0 2px 20px 0 rgba(110, 130, 208, .18);
+    /* box-shadow: 0 2px 20px 0 rgba(110, 130, 208, .18); */
 }
 
 .accordion-card-body{
     background: #e8eeff;
+    font-size: 0.9rem;
 }
 
 .btn-link{
@@ -417,6 +425,7 @@ button:focus {
     font-weight: bold !important;
     text-align: left !important;
     text-decoration: none !important;
+    background: #f2f2f2;
 }
 
 .btn-link::after{
@@ -438,7 +447,7 @@ button:focus {
     height: 25px;
     width: 25px;
     position: absolute;
-    background: #fff;
+    background: #f2f2f2;
     z-index: 1;
     transform: rotate(45deg);
     left: 30px;
@@ -467,6 +476,7 @@ button:focus {
 .footer-title{
     font-weight: bolder;
     font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer-desc{
