@@ -15,17 +15,31 @@ button:focus {
 
 /* NAVIGATION BAR */
 .navbar-edit{
-    padding: 3rem;
+    padding: 2rem;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     background: #d9dae1;
+}
+
+.mmg-logo{
+    position: relative;
+    width: 230px;
+}
+
+@media (max-width: 550px) {
+    .mmg-logo{
+        width: 200px;
+    }
+    .navbar-edit{
+        padding: 1rem;
+    }
 }
 
 /* HOME */
 #home{
     background: #d9dae1;
     font-family: 'Roboto', sans-serif;
-    height: 88vh;
+    height: 90vh;
 }
 
 #home .container{
@@ -70,9 +84,6 @@ button:focus {
     transform: translate3d(0px, -4px, 0px);
 }
 
-.home-img img{
-}
-
 .image-col{
     opacity: 1;
 }
@@ -86,6 +97,21 @@ button:focus {
     }
     .title-cont{
         padding: 2rem;
+    }
+    .title-text{
+        font-size: 3rem;
+    }
+    .title-desc{
+        font-size: 1.1rem;
+    }
+    .title-btn{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+    #home{
+        height: 50vh;
     }
 }
 
@@ -147,6 +173,14 @@ button:focus {
         left: 0;
         transform: none
     }
+    .desc-text{
+        font-size: 2.5rem;
+    }
+    
+    .desc-desc{
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
 }
 
 /* ABOUT */
@@ -156,7 +190,8 @@ button:focus {
 }
 
 #about .container{
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
 }
 
 .about-title-box{
@@ -188,10 +223,22 @@ button:focus {
 
 @media (max-width: 770px) {
     #about{
-        height: 60vh;
+        /* height: 60vh; */
     }
     .about-img-rmv{
         display: none;
+    }
+    .about-title-text{
+        font-size: 3rem;
+    }
+    .about-title-desc{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 822px) {
+    .about-title-box{
+        margin-top: 5rem;
     }
 }
 
@@ -222,8 +269,9 @@ button:focus {
     font-family: 'Quicksand', sans-serif;
 }
 .test-card{
-    width: 360px;
+    width: 350px;
     border: none;
+    /* margin: auto; */
 }
 .test-text-box{
     padding: 2rem;
@@ -239,12 +287,23 @@ button:focus {
 }
 
 .card-m-left{
+    width: 350px;
+    border: none;
     margin-left: 10rem;
+}
+
+@media (max-width: 1220px) {
+    .card-m-left{
+        margin-left: 0;
+    }
+    .test-card{
+        margin: auto;
+    }
 }
 
 @media (max-width: 820px) {
     .card-m-left{
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 }
 
@@ -274,17 +333,19 @@ button:focus {
 .plans-box-container{
     margin-top: 5rem;
 }
-
+.plan-col{
+    margin-bottom: 3rem;
+}
 .plan-card{
     background-color: #f2f2f2;
     border: none;
     border-radius: 40px;
     color: #a1a1a1;
     font-size: 0.8rem;
-    margin-top: 3rem;
     transition: 0.3s ease;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    margin: auto;
 }
 .plan-card-text{
     padding: 14% 10%;
@@ -362,14 +423,11 @@ button:focus {
 
 @media (max-width: 590px) {
     .plan-card{
-        margin-left: 1.5rem
     }
     .plan-img{
-        /* width: 100px; */
     }
     .plan-price-box{
         margin-top: 2rem;
-        /* margin-left: -1rem; */
     }
 }
 
@@ -455,6 +513,12 @@ button:focus {
     transform: rotate(45deg);
     left: 30px;
     top: 46px;
+}
+
+@media (max-width: 432px) {
+    .btn-link:before{
+        display: none;
+    }  
 }
 
 @media (max-width: 770px) {
