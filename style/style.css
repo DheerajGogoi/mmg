@@ -293,7 +293,8 @@ button:focus {
     text-align: center;
 }
 .plan-img{
-    width: 60px
+    width: 50px;
+    align-items: center;
 }
 .top-row{
     display: flex;
@@ -305,6 +306,8 @@ button:focus {
     border-right: 1.3rem solid white;
     border-bottom-right-radius: 40px;
     align-items: center;
+    min-height: 112px;
+    display: flex;
 }
 .plan-price-box{
     margin-top: 1rem;
