@@ -19,6 +19,7 @@ button:focus {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     background: #d9dae1;
+    display: none;
 }
 
 .mmg-logo{
@@ -35,16 +36,24 @@ button:focus {
     }
 }
 
+@media (max-width: 767px) {
+    .navbar-edit{
+        display: block;
+    }
+}
+
 /* HOME */
 #home{
     background: #d9dae1;
     font-family: 'Roboto', sans-serif;
-    height: 70vh;
+    /* height: 70vh; */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 #home .container{
-    padding-bottom: 4rem;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.066);
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.039);
+    padding: 2rem;
 }
 .shadow-row{
     
@@ -53,7 +62,7 @@ button:focus {
     position: relative;
 }
 .home-title-box{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .title-text{
@@ -71,7 +80,7 @@ button:focus {
     margin-top: 1.5rem;
 }
 .home-main-image{
-    width: 100%;
+    width: 70%;
 }
 .start-btn{
     color: white;
@@ -91,6 +100,7 @@ button:focus {
 
 .image-col{
     opacity: 1;
+    text-align: center;
 }
 
 @media (max-width: 770px) {
@@ -197,10 +207,11 @@ button:focus {
 #about .container{
     padding-bottom: 6rem;
     padding-top: 4rem;
+    padding: 4rem 6rem 2rem 2rem;
 }
 
 .about-title-box{
-    margin-top: 8rem;
+    margin-top: 9rem;
 }
 
 .about-title-text{
@@ -221,7 +232,7 @@ button:focus {
     text-align: center;
 }
 .about-img img{
-    width: 600px;
+    width: 800px;
 }
 
 .about-img-rmv{
