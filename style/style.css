@@ -205,13 +205,13 @@ button:focus {
 }
 
 #about .container{
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
     padding-top: 4rem;
     padding: 4rem 6rem 2rem 2rem;
 }
 
 .about-title-box{
-    margin-top: 9rem;
+    margin-top: 4rem;
 }
 
 .about-title-text{
@@ -229,10 +229,12 @@ button:focus {
     margin-top: 1.5rem;
 }
 .about-img{
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 4rem;
 }
 .about-img img{
     width: 800px;
+    /* padding-left: 3rem; */
 }
 
 .about-img-rmv{
