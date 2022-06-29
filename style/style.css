@@ -39,18 +39,21 @@ button:focus {
 #home{
     background: #d9dae1;
     font-family: 'Roboto', sans-serif;
-    height: 90vh;
+    height: 70vh;
 }
 
 #home .container{
     padding-bottom: 4rem;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.066);
 }
-
+.shadow-row{
+    
+}
 .title-cont{
     position: relative;
 }
 .home-title-box{
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .title-text{
@@ -67,7 +70,9 @@ button:focus {
 .title-btn{
     margin-top: 1.5rem;
 }
-
+.home-main-image{
+    width: 100%;
+}
 .start-btn{
     color: white;
     background-color: #ff1d25;
@@ -191,11 +196,11 @@ button:focus {
 
 #about .container{
     padding-bottom: 6rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .about-title-box{
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .about-title-text{
@@ -212,9 +217,11 @@ button:focus {
 .about-title-btn{
     margin-top: 1.5rem;
 }
-
+.about-img{
+    text-align: center;
+}
 .about-img img{
-    width: 800px;
+    width: 600px;
 }
 
 .about-img-rmv{
@@ -222,8 +229,8 @@ button:focus {
 }
 
 @media (max-width: 770px) {
-    #about{
-        /* height: 60vh; */
+    #about .container{
+        padding-top: 2rem;
     }
     .about-img-rmv{
         display: none;
